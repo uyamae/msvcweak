@@ -45,26 +45,26 @@ extern int _default_func2();
 /// メイン関数
 int main()
 {
-	return func() + func2();
+    return func() + func2();
 }
 
 #if !USE_DEFAULT
 /// C リンケージの独自実装
 int func() {
-	return 0;
+    return 0;
 }
 /// C++ リンケージの独自実装
 int func2() {
-	return 0;
+    return 0;
 }
 #endif
 
 /// C リンケージのデフォルト実装
 int _default_func() {
-	return 1;
+    return 1;
 }
 /// C++ リンケージのデフォルト実装
 int _default_func2() {
-	return 2;
+    return 2;
 }
 
